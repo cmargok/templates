@@ -14,13 +14,18 @@ try
     // Add services to the container.
     builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
     builder.Services.AddProblemDetails();
-    builder.Services.AddTelemetry();
-    builder.Services.AddControllers();
+
+    builder.Services.AddCorrelation();
+
     builder.Services.AddOpenApi();
     builder.Services.AddSwaggerUI();
+
     builder.Services.AddJWTAuthentication();
+
     builder.Host.ConfigureSerilog();
     builder.Services.AddSerilog();
+
+    builder.Services.AddControllers();
 
     var app = builder.Build();
 

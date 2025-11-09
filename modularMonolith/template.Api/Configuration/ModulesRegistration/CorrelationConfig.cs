@@ -5,7 +5,7 @@ namespace template.Api.Configuration.ModulesRegistration
 {
     public static class CorrelationConfig
     {
-        public static IServiceCollection AddTelemetry(this IServiceCollection services)
+        public static IServiceCollection AddCorrelation(this IServiceCollection services)
         {
             services.AddScoped<ICorrelationIdHandler, CorrelationIdHandler>();
             return services;
