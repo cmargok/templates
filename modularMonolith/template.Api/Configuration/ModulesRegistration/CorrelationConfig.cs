@@ -3,7 +3,7 @@ using template.Api.Configuration.Handlers.Implementations;
 
 namespace template.Api.Configuration.ModulesRegistration
 {
-    public static class Correlation
+    public static class CorrelationConfig
     {
         public static IServiceCollection AddTelemetry(this IServiceCollection services)
         {

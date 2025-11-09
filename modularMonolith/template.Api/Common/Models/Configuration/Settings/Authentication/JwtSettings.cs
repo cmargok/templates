@@ -1,4 +1,4 @@
-﻿namespace template.Api.Common.Models.Authentication
+﻿namespace template.Api.Common.Models.Configuration.Settings.Authentication
 {
     public class JwtSettings
     {

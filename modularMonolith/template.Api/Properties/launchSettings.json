@@ -13,7 +13,10 @@
       "launchBrowser": true,
       "launchUrl": "swagger",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "JwtSettings_Key": "",
+        "JwtSettings_Issuer": "",
+        "JwtSettings_Audience": ""      
       },
       "dotnetRunMessages": true,
       "applicationUrl": "https://localhost:7002;http://localhost:5130"
